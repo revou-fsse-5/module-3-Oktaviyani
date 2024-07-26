@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Recipe Finder</title>
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="icon" href="src/egg.png" type="image/png" />
   </head>
   <body>
-    <div class="container">
-      <h1>Random Recipe Finder</h1>
-      <button id="getRecipeBtn">Get Random Recipe</button>
-      <div id="recipeContainer" class="recipe-container">
-        <img class="recipe-image" src="" alt="" />
-        <h2 class="recipe-title"></h2>
-        <p class="recipe-instruction"></p>
+
+        <div class="container">
+          <h1>Random Recipe Finder</h1>
+          <button id="getRecipeBtn">Get Random Recipe</button>
+          <div id="recipeContainer" class="recipe-container">
+              <img id="recipe-image" src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg" alt="Recipe Image" />
+              <h2 id="recipe-title"></h2>
+              <p id="recipe-instruction"></p>
+          </div>
       </div>
-    </div>
-    <script type="module" src="/src/main.js"></script>
-    <script src="tgs.js"></script>
+
+    <script src="src/main.js"></script>
   </body>
 </html>
