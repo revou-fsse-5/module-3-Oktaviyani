@@ -19,6 +19,6 @@ The file uses modern JavaScript features like async/await for handling asynchron
 click here for check the assignment progress https://beautiful-daifuku-43e243.netlify.app/
 
 
-##here the looks **[CLICK HERE](https://beautiful-daifuku-43e243.netlify.app/)**
-![alt text](image.png)
+## here the looks **[CLICK HERE](https://beautiful-daifuku-43e243.netlify.app/)**
+![alt text]
 
