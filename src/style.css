@@ -15,14 +15,101 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto; /*biar bisa scroll*/
+}
+
+.container img {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  
+}
+
+#recipe-youtube {
+  margin-top: 20px;
+  display: none;
+   
+}
+
+#recipe-youtube a {
+  color: blue;
+  text-decoration: underline;
 }
 
 .recipe-container {
   background-color: #f5f5f5;
   border-radius: 10px;
   width: 100%;
-  
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  opacity: 0; 
+  transform: translateY(100px); 
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out; 
+}    
+
+.recipe-container.show {
+  opacity: 1; 
+  transform: translateY(0); /
 }
+
+#recipe-instruction h3, #recipe-ingredients h3, #recipe-category h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#recipe-category {
+  background-color: pink;
+  border: 1px solid #d1a0a5;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  text-align: center; 
+  display: none; 
+}
+
+#recipe-ingredients ol {
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+#recipe-ingredients {
+  background-color: white;
+  border: 2px solid #aaaaaa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+
+}
+
+#recipe-instruction p {
+  text-align: left;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+#recipe-instruction {
+  background-color: white;
+  border: 2px solid #aaaaaa;
+  border-radius: 10px;
+
+}
+
 
 h1 {
   margin-bottom: 20px;
@@ -44,8 +131,10 @@ button:hover {
 }
 
 #recipe-image {
-  width: 500px;
   border-radius: 20px;
+  display: block;
+  width: 100%;
+  max-width: 300px; 
 }
 
 #recipe-image:hover {
@@ -88,10 +177,13 @@ button:hover {
     font-size: 14px;
   }
   #recipe-image {
-    width: 300px;
+    width: 100%;
+    max-width: 100%;
   }
   .recipe-container {
-    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .recipe-title {
     font-size: 20px;
@@ -99,6 +191,13 @@ button:hover {
   .recipe-instructions {
     font-size: 14px;
   }
+  #recipe-ingredients ol, #recipe-instruction p {
+    text-align: left;
+}
+  #recipe-ingredients, #recipe-instruction, #recipe-category {
+  flex: 1 1 100%;
+  max-width: 600px;
+
 }
 
 @media (max-width: 480px) { /* For Phone */
