@@ -122,3 +122,5 @@ async function onRandomRecipe() {
 
 // Bind the function to the button click event
 document.getElementById('getRecipeBtn').addEventListener('click', onRandomRecipe);
+
+

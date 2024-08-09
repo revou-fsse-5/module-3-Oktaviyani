@@ -12,6 +12,24 @@ The `app.js` file is the core JavaScript file for the Random Recipe Finder appli
 
 The file uses modern JavaScript features like async/await for handling asynchronous operations and DOM manipulation to dynamically update the page content.
 
+# Compile to Typescript
+
+## The Typescript code information are with some changing are:
+Interfaces:
+Ingredient and Meal interfaces were created to define the structure of the meal data and ingredient items.
+
+Type Annotations:
+Added type annotations to function return types and parameters to ensure type safety.
+
+Type Assertions:
+Used TypeScript's type assertions (as Type) to explicitly specify the type of DOM elements.
+
+Optional Properties:
+Marked strYoutube as optional in the Meal interface, as some recipes may not have a YouTube link.
+
+Type Inference:
+Utilized TypeScript's type inference to simplify and ensure correct handling of variables and return types.
+
 ## here some view of the random recipe view
 ![alt text](image-1.png)
 
